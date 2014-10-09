@@ -34,7 +34,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<a href="images/profile.jpg"><span class="image avatar48"><img src="images/profile.jpeg" alt="" /></span></a>
+							<a href="images/profile.jpg"><span class="image avatar48"><img src="images/profile-small.jpeg" alt="Babu" /></span></a>
 							<h1 id="title">Babu Prasad </h1>
 							<p>Graduate Student</p>
 						</div>
@@ -57,8 +57,8 @@
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+								<!-- <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li> -->
+								<li><a href="BabuPrasad_Resume.pdf" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-file-pdf-o">Resume</span></a></li>
 							</ul>
 						</nav>
 						
@@ -68,11 +68,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/babuprasad" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/babupras" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:babupras@buffalo.edu" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+							<li><a href="http://stackoverflow.com/users/2553321/babu-prasad" class="icon fa-stack-overflow" target="_blank"><span class="label">StackOverflow</span></a></li>
 						</ul>
 				
 				</div>
@@ -87,9 +86,9 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Babu Prasad</strong>, Master's Student at University
+								<h2 class="alt">Hi! I'm <strong>Babu Prasad</strong>, <br/> CSE Graduate Student at University
 								at Buffalo. </h2> 
-								<p>Passionate about smartphone research and software development. 4+ years of professional
+								<p>Passionate about smartphone research and object oriented design. 4+ years of professional
 								experience in software development. Tennis at free time. </p>
 							</header>
 							
@@ -108,65 +107,73 @@
 								<h2>Projects</h2>
 							</header>
 							<div class="row">
-								<div class="4u">
+								<div class="6u">
 									<article class="item">
 										<header>Travel Search System</header>
-										<body>To suggest travel destinations to users based on their preferences.</body>
-										<a href="https://github.com/patronus/travelsuggest">Read more</a>
+										<body>Web Search engine to  suggest travel destinations based on user preferences featuring drill-down approach. Also provides Faceted Search, Geo-location search, user based personalized search. Used PHP, jQuery, Apache Solr, Yelp &amp; Flicker APIs </body>
+										<a href="https://github.com/babuprasad/travelsuggest">Read more</a>
 									</article>
 									<article class="item">
+										<header>Wikipedia Parser, Indexer and Document Retrieval</header>
+										<body>Parser which pareses all wikipedia documents removing XML, wiki markups, tokenizer and analyzer removing stopwords, symbols, etc and producing meaningful tokens &amp; Indexer finally creating postings list of tokens with term frequencies. Developed in Java.</body>
+										<a href="https://github.com/babuprasad/wikiindexer">Read more</a>
+									</article>
+									<article class="item">
+										<header>Amazon Dynamo Storage Replication</header>
+										<body>Replicated key-value storage (based on Amazon dynamo model) where the key values are distributed across devices. This model achieves availability, linearizability and failure handling through Quorum replication. Implemented in Android.
+										</body>
+										<a href="https://github.com/babuprasad/simpledynamo">Read more</a>
+									</article>
+									<article class="item">
+										<header>District Government Information System</header>
+										<body>Web service to eliminate paper-based petitions filing, certificate requests, public grievance complaints, etc by providing it online accessible using JSP, Servlets, DB2.
+										</body>
+<!-- 										<a href="https://github.com/babuprasad/simpledynamo">Read more</a>
+ -->									</article>
+								</div>
+								<div class="6u">
+									<article class="item">
+										<header>Twitter Data Analysis</header>
+										<body>Analysis and visualizations of tweets for trending topics, co-word occurences, realtive frequency, k-means clustering of the trending topics using Mapreduce techniques in Hadoop.</body>
+										<a href="https://github.com/babuprasad/tweetanalysis">Read more</a>
+									</article>
+									<article class="item">
+										<header>OS/161 Process syscalls &amp; VM</header>
+										<body>Implementation of Operating System OS1/161 process system calls such as fork(),execv(),getpid() and Virtual Memory functionalities such as (malloc,coremap, TLB) using C. </body>
+<!-- 										<a href="https://github.com/babuprasad/travelsuggest">Read more</a>
+ -->									</article>
+									<article class="item">
+										<header>Chord distributed Hash Table</header>
+										<body>Distributed Hash Table (Chord protocol) which enforces key-value storage spread across devices. Also provides features like node partitioning, node join, ring based routing of messages. Implemented in Android. 
+										</body>
+										<a href="https://github.com/babuprasad/simpledht">Read more</a>
+									</article>	
+									<article class="item">
 										<header>Maxpro Mobile</header>
-										<body>CCTV Video streaming mobile App </body>
+										<body>CCTV surveillance Mobile App to steam video live/playback using HttpLiveStreaming (HLS), taking snapshots during playback, manage user notifications, etc. Implemented in Android.</body>
 										<a href="https://www.youtube.com/watch?v=RM145hBOAiA">Read more</a>
 									</article>
 								</div>
-								<div class="4u">
-									<article class="item">
-										<header>Wikipedia Parser, Indexer and Document Retrieval</header>
-										<body>To suggest travel destinations to users based on their preferences.</body>
-										<a href="https://github.com/patronus/travelsuggest">Read more</a>
-									</article>
-									<article class="item">
-										<header>Travel Search System</header>
-										<body>To suggest travel destinations to users based on their preferences.</body>
-										<a href="https://github.com/patronus/travelsuggest">Read more</a>
-									</article>
-								</div>
-								<div class="4u">						<article class="item">
-										<header>Travel Search System</header>
-										<body>To suggest travel destinations to users based on their preferences.</body>
-										<a href="https://github.com/patronus/travelsuggest">Read more</a>
-									</article>
-									<article class="item">
-										<header>Travel Search System</header>
-										<body>To suggest travel destinations to users based on their preferences.</body>
-										<a href="https://github.com/patronus/travelsuggest">Read more</a>
-									</article>
-								</div>
+								
 							</div>
 						</div>
 					</section>
 
 				<!-- About Me -->
-					<section id="about" class="three">
+<!-- 					<section id="about" class="three">
 						<div class="container">
 
 							<header>
 								<h2>About Me</h2>
 							</header>
 							
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
-							ornare iaculis.</p>
+							<p><iframe src="https://www.linkedin.com/in/babupras"></iframe></p>
 
 						</div>
-					</section>
+					</section> -->
 			
 				<!-- Contact -->
-					<section id="contact" class="four">
+					<!-- <section id="contact" class="four">
 						<div class="container">
 
 							<header>
@@ -196,7 +203,7 @@
 							</form>
 
 						</div>
-					</section>
+					</section> -->
 			
 			</div>
 
@@ -205,7 +212,7 @@
 				
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Babu Prasad. All rights reserved.</li>
 					</ul>
 				
 			</div>
